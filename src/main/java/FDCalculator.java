@@ -21,7 +21,7 @@ public class FDCalculator {
 
         int rows = ExcelUtilities.getRowCount(fileName,sheetName);
 
-        for (int i = 0; i < rows; i++) {
+        for (int i = 1; i < rows; i++) {
             // reading data from the Excel file
             String principle = ExcelUtilities.getCellData(fileName,sheetName,i,0);
             String rateOfInterest = ExcelUtilities.getCellData(fileName,sheetName,i,1);
