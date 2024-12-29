@@ -26,7 +26,7 @@ public class ReadingDataFromExcel {
                 // first we need fetch the last row number because it represents the number of rows
             int totalRows = sheet.getLastRowNum();
                 // second we need fetch the number of cells
-            int totalCells = sheet.getRow(1).getLastCellNum();
+            int totalCells = sheet.getRow(1).getLastCellNum(); // we can pout any row number 0; 1 ...
 
             System.out.println("Number of Rows is : "+ totalRows);
             System.out.println("Number of Cells is : "+ totalCells);
